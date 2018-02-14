@@ -13,11 +13,11 @@ namespace ComicBookGallery.Models
         public string SeriesTitle { get; set; }
         public int IssueNumber { get; set; }
         public string DescriptionHtml { get; set; }
-        public string[] Artists { get; set; }
+        public Artist[] Artists { get; set; }
         public bool Favorite { get; set; }
 
         //Read-Only because we only defined a getter property and not a setter
-        public string DisplayTest
+        public string DisplayText
         {
             get
             {
